@@ -11,4 +11,6 @@ Add `pdb-capf` to `completion-at-point-functions`, e.g.:
 
 ## Screenshot
 
-![datetime-completions](./screenshots/datetime-completions.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/muffinmad/emacs-pdb-capf/master/screenshots/datetime-completions.png" width="640">
+</p>
