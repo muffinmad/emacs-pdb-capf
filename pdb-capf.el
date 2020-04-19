@@ -86,10 +86,10 @@
                     (point)))
            (start (save-excursion
                     (if (re-search-backward
-                         (python-rx (or whitespace open-paren close-paren
+                         (python-rx (or ":" whitespace open-paren close-paren
                                         string-delimiter simple-operator))
                          start t)
-                        (1+ (point))
+                        (+ (point) (length (match-string-no-properties 0)))
                       start))))
       (when (>= end start)
         (list start
