@@ -36,6 +36,7 @@
 
 ;;; Code:
 
+(require 'rx)
 (require 'python)
 
 (defvar pdb-capf-script
@@ -69,7 +70,7 @@
       (let ((completions (buffer-substring-no-properties
                           (point)
                           (line-end-position))))
-        (unless (string-empty-p completions)
+        (unless (string-equal completions "")
           (split-string completions ";"))))))
 
 ;;;###autoload
