@@ -3,10 +3,13 @@
 
 ## Usage
 
-Add `pdb-capf` to `completion-at-point-functions`, e.g.:
+Enable pdb completions for specific modes by adding `pdb-capf` to `completion-at-point-functions`, e.g. (for GUD):
 
 ```elisp
-(add-hook 'completion-at-point-functions 'pdb-capf nil t)
+(add-hook 'pdb-mode-hook
+          (lambda ()
+            (add-hook 'completion-at-point-functions
+                      'pdb-capf nil t)))
 ```
 
 ## Screenshot
