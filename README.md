@@ -1,3 +1,5 @@
+[![License GPL 3](https://img.shields.io/badge/license-GPL_3-green.svg)](http://www.gnu.org/copyleft/gpl.html)
+[![MELPA](http://melpa.org/packages/pdb-capf-badge.svg)](http://melpa.org/#/pdb-capf)
 # emacs-pdb-capf
 `completion-at-point` function for `pdb` (Python debugger)
 
